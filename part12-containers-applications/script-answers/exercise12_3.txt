@@ -530,4 +530,127 @@ sudo apt install cups-bsd  # version 2.3.1-9ubuntu1.2, or
 sudo apt install lpr       # version 1:2008.05.17.3
 sudo apt install lprng     # version 3.8.B-2.2
 
-]0;turunenv@LAPTOP-DHK8FEIV: ~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[01;32mturunenv@LAPTOP-DHK8FEIV[00m:[01;34m~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-a
+]0;turunenv@LAPTOP-DHK8FEIV: ~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[01;32mturunenv@LAPTOP-DHK8FEIV[00m:[01;34m~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[00m$ ls
+exercise12_1.txt  exercise12_2.txt  typescript
+]0;turunenv@LAPTOP-DHK8FEIV: ~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[01;32mturunenv@LAPTOP-DHK8FEIV[00m:[01;34m~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[00m$ mv typescript exercise12_3.txt
+]0;turunenv@LAPTOP-DHK8FEIV: ~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[01;32mturunenv@LAPTOP-DHK8FEIV[00m:[01;34m~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[00m$ git sdtat[K[K[K[Ktatus
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mexercise12_3.txt[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;turunenv@LAPTOP-DHK8FEIV: ~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[01;32mturunenv@LAPTOP-DHK8FEIV[00m:[01;34m~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[00m$ git add exercise12_3.txt 
+]0;turunenv@LAPTOP-DHK8FEIV: ~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[01;32mturunenv@LAPTOP-DHK8FEIV[00m:[01;34m~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[00m$ git commit -m "12.3"
+[master cb47563] 12.3
+ 1 file changed, 533 insertions(+)
+ create mode 100644 part12-containers-applications/script-answers/exercise12_3.txt
+]0;turunenv@LAPTOP-DHK8FEIV: ~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[01;32mturunenv@LAPTOP-DHK8FEIV[00m:[01;34m~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[00m$ git push
+Username for 'https://github.com': turunenv
+Password for 'https://turunenv@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/turunenv/fullstackopen_2022_part12_containers.git/'
+]0;turunenv@LAPTOP-DHK8FEIV: ~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[01;32mturunenv@LAPTOP-DHK8FEIV[00m:[01;34m~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[00m$ git remove [K[K[Kte ls
+error: Unknown subcommand: ls
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+]0;turunenv@LAPTOP-DHK8FEIV: ~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[01;32mturunenv@LAPTOP-DHK8FEIV[00m:[01;34m~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[00m$ git remove[K[K[Kt[Kote
+origin
+]0;turunenv@LAPTOP-DHK8FEIV: ~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[01;32mturunenv@LAPTOP-DHK8FEIV[00m:[01;34m~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[00m$ git remov[Kte --help
+[?1049h[22;0;0t[?1h=GIT-REMOTE(1)                                         Git Manual                                        GIT-REMOTE(1)[m
+[m
+[1mNAME[0m[m
+       git-remote - Manage set of tracked repositories[m
+[m
+[1mSYNOPSIS[0m[m
+       [4mgit[24m [4mremote[24m [-v | --verbose][m
+       [4mgit[24m [4mremote[24m [4madd[24m [-t <branch>] [-m <master>] [-f] [--[no-]tags] [--mirror=<fetch|push>] <name> <url>[m
+       [4mgit[24m [4mremote[24m [4mrename[24m <old> <new>[m
+       [4mgit[24m [4mremote[24m [4mremove[24m <name>[m
+       [4mgit[24m [4mremote[24m [4mset-head[24m <name> (-a | --auto | -d | --delete | <branch>)[m
+       [4mgit[24m [4mremote[24m [4mset-branches[24m [--add] <name> <branch>...[m
+       [4mgit[24m [4mremote[24m [4mget-url[24m [--push] [--all] <name>[m
+       [4mgit[24m [4mremote[24m [4mset-url[24m [--push] <name> <newurl> [<oldurl>][m
+       [4mgit[24m [4mremote[24m [4mset-url[24m [4m--add[24m [--push] <name> <newurl>[m
+       [4mgit[24m [4mremote[24m [4mset-url[24m [4m--delete[24m [--push] <name> <url>[m
+       [4mgit[24m [4mremote[24m [-v | --verbose] [4mshow[24m [-n] <name>...[m
+       [4mgit[24m [4mremote[24m [4mprune[24m [-n | --dry-run] <name>...[m
+       [4mgit[24m [4mremote[24m [-v | --verbose] [4mupdate[24m [-p | --prune] [(<group> | <remote>)...][m
+[m
+[1mDESCRIPTION[0m[m
+       Manage the set of repositories ("remotes") whose branches you track.[m
+[m
+[1mOPTIONS[0m[m
+[7m Manual page git-remote(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       -v, --verbose[m
+[7m Manual page git-remote(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Be a little more verbose and show remote url after name. NOTE: This must be placed between [1mremote[0m and[m
+[7m Manual page git-remote(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1msubcommand[0m.[m
+[7m Manual page git-remote(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-remote(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mCOMMANDS[0m[m
+[7m Manual page git-remote(1) line 6 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;turunenv@LAPTOP-DHK8FEIV: ~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[01;32mturunenv@LAPTOP-DHK8FEIV[00m:[01;34m~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[00m$ git remote -v
+origin	https://github.com/turunenv/fullstackopen_2022_part12_containers.git (fetch)
+origin	https://github.com/turunenv/fullstackopen_2022_part12_containers.git (push)
+]0;turunenv@LAPTOP-DHK8FEIV: ~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[01;32mturunenv@LAPTOP-DHK8FEIV[00m:[01;34m~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[00m$ git remote set-url origin git@github.com:turunenv/fullstackopen_2022_part12_containers.git
+]0;turunenv@LAPTOP-DHK8FEIV: ~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[01;32mturunenv@LAPTOP-DHK8FEIV[00m:[01;34m~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[00m$ git remote -v
+origin	git@github.com:turunenv/fullstackopen_2022_part12_containers.git (fetch)
+origin	git@github.com:turunenv/fullstackopen_2022_part12_containers.git (push)
+]0;turunenv@LAPTOP-DHK8FEIV: ~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[01;32mturunenv@LAPTOP-DHK8FEIV[00m:[01;34m~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[00m$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   exercise12_3.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;turunenv@LAPTOP-DHK8FEIV: ~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[01;32mturunenv@LAPTOP-DHK8FEIV[00m:[01;34m~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[00m$ git pull
+The authenticity of host 'github.com (140.82.121.4)' can't be established.
+ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? y
+Please type 'yes', 'no' or the fingerprint: yes
+Warning: Permanently added 'github.com,140.82.121.4' (ECDSA) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+]0;turunenv@LAPTOP-DHK8FEIV: ~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[01;32mturunenv@LAPTOP-DHK8FEIV[00m:[01;34m~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[00m$ ls -la ~/.ssh
+total 12
+drwx------  2 turunenv turunenv 4096 Aug  9 12:36 [0m[01;34m.[0m
+drwxr-xr-x 11 turunenv turunenv 4096 Aug  9 12:36 [01;34m..[0m
+-rw-r--r--  1 turunenv turunenv  444 Aug  9 12:36 known_hosts
+]0;turunenv@LAPTOP-DHK8FEIV: ~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[01;32mturunenv@LAPTOP-DHK8FEIV[00m:[01;34m~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[00m$ car[Kt ~/.ssh/known_hosts 
+|1|xPA6HFU66UCefcbXFshH1qOseRQ=|qGM3qjwuzGa9rvr+2HTAVCOG3FM= ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEmKSENjQEezOmxkZMy7opKgwFB9nkt5YRrYMjNuG5N87uRgg6CLrbo5wAdT/y6v0mKV0U2w0WZ2YB/++Tpockg=
+|1|i4wLrlifFxQrKVrglt9sj0kmuno=|vUeJ92UHrNWDl0X4ZoTHn7JURXs= ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEmKSENjQEezOmxkZMy7opKgwFB9nkt5YRrYMjNuG5N87uRgg6CLrbo5wAdT/y6v0mKV0U2w0WZ2YB/++Tpockg=
+]0;turunenv@LAPTOP-DHK8FEIV: ~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[01;32mturunenv@LAPTOP-DHK8FEIV[00m:[01;34m~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[00m$ git config -list
+error: did you mean `--list` (with two dashes)?
+]0;turunenv@LAPTOP-DHK8FEIV: ~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[01;32mturunenv@LAPTOP-DHK8FEIV[00m:[01;34m~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[00m$ git config --list
+[?1h=user.name=turunenv[m
+user.email=vili.turunen@aalto.fi[m
+core.repositoryformatversion=0[m
+core.filemode=true[m
+core.bare=false[m
+core.logallrefupdates=true[m
+remote.origin.url=git@github.com:turunenv/fullstackopen_2022_part12_containers.git[m
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*[m
+branch.master.remote=origin[m
+branch.master.merge=refs/heads/master[m
+[K[?1l>]0;turunenv@LAPTOP-DHK8FEIV: ~/webdev/fullstackopen/fullstackopen_2022_part12_containers/part12-containers-applications/script-answers[01;32mturunenv@LAPTOP-DHK8FEIV[00m:[01;34m~/webdev/fullstackopen/fulls
