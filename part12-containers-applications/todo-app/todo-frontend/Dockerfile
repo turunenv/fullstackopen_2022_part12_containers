@@ -10,6 +10,10 @@ RUN npm ci
 
 RUN npm run build
 
+# run tests
+RUN CI=true npm test
+
+
 
 # new stage
 FROM nginx:1.20-alpine
