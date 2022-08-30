@@ -1,32 +1,25 @@
 services:
   frontend:
-    image: blog-frontend
+    image: blog-frontend-prod
     build:
       context: ./frontend
-      dockerfile: dev.Dockerfile
-    volumes:
-      - ./frontend:/usr/src/app
+      dockerfile: Dockerfile
     ports:
-      - 3000:3000
-    environment:
-      - REACT_APP_BACKEND_URL=http://localhost:3003
-    container_name: frontend
+      - 3000:80
+    depends_on:
+      - backend
+    container_name: blog-frontend-prod
 
   backend:
-    image: blog-backend
+    image: blog-backend-prod
     build:
       context: ./backend
-      dockerfile: dev.Dockerfile
-    volumes:
-      - ./backend:/usr/src/app
+      dockerfile: Dockerfile
+    container_name: blog-backend-prod
     ports:
       - 3003:3003
-    container_name: backend
     depends_on:
       - mongo
-    environment:
-      - MONGO_URI=mongodb://the_username:the_password@mongo:27017/the_database
-      - PORT=3003
   mongo:
     image: mongo
     ports:
